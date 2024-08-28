@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop-based CAPTCHA</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <form id="captchaForm" onsubmit="return validateCaptcha()">
+        <label for="captchaInput">Please enter the text below to confirm that you are not a robot:</label>
+        <div id="captcha"></div>
+        <input type="text" id="captchaInput" required>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="capcher.js"></script>
+</body>
+</html>
